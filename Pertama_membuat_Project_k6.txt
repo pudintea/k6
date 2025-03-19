@@ -31,4 +31,9 @@ Untuk menginstall K6 Library, kita bisa gunakan perintah :
 
 
 
+
+
+
+
+
 ====== PUDIN.MY.ID ===============
