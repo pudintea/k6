@@ -1,0 +1,14 @@
+
+Membuat Script
+===============
+Untuk membuat Script K6, kita cukup membuat file JavaScript
+Atau bisa menggunakan cara lebih mudah menggunakan perintah :
+> k6 new lokasi/file.js
+Secara otomatis akan dibuatkan file baru di lokasi/file.js dan sudah berisi script K6 sederhana untuk performance testing
+
+Misal buat 1 buah folder "src"
+> k6 new src/ping.js
+
+
+
+
