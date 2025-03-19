@@ -1,6 +1,6 @@
-Buat 1 buah folder, misal nama foldernya adalah "Belajar-K6".
-Masuk kedalam folder tersebut.
-Gunakan perintah " npm init -y ".
+Buat 1 buah folder, misal nama foldernya adalah "belajar-k6".
+Masuk kedalam folder tersebut "cd belajar-k6".
+Gunakan perintah "npm init -y".
 Ubah/Tambahkan type di package.json menjadi module.
 Contoh :
 {
@@ -17,6 +17,17 @@ Contoh :
 }
 
 
+K6 Library
+===========
+K6 sendiri sudah menyediakan library yang bisa digunakan untuk mempermudah melakukan pengujian
+Namun ingat, NPM package library yang kita gunakan sebenarnya tidak berisi kode JavaScript sama sekali, itu hanya berisi informasi metadata
+Karena sebenarnya seperti yang dibahas sebelumnya, K6 dibuat menggunakan Golang, jadi tidak berjalan diatas NodeJS
+
+INSTALL K6
+===========
+Untuk menginstall K6 Library, kita bisa gunakan perintah :
+npm install k6
+npm install --save-dev @types/k6
 
 
 
