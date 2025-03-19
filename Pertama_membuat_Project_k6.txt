@@ -1,0 +1,23 @@
+Buat 1 buah folder, misal nama foldernya adalah "Belajar-K6".
+Masuk kedalam folder tersebut.
+Gunakan perintah " npm init -y ".
+Ubah/Tambahkan type di package.json menjadi module.
+Contoh :
+{
+  "name": "belajar-k6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pudin Saepudin",
+  "license": "ISC",
+  "type":"module",
+  "description": ""
+}
+
+
+
+
+
+====== PUDIN.MY.ID ===============
