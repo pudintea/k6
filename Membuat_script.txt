@@ -44,7 +44,34 @@ Misal :
 k6 run src/ping.js --summary-export ping-output.json
 
 
+WEB DASHBOARD
+================
+https://grafana.com/docs/k6/latest/results-output/web-dashboard/
+Masukan Perintah :
+Di Windows\Unix
+> set K6_WEB_DASHBOARD=true
+> export K6_WEB_DASHBOARD=true
+Lalu Jalankan 
+> k6 run src/ping.js
 
+Viasanya akan tampil seperti ini :
+
+         /\      Grafana   /‾‾/
+    /\  /  \     |\  __   /  /
+   /  \/    \    | |/ /  /   ‾‾\
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/
+
+     execution: local
+        script: src/ping.js
+ web dashboard: http://127.0.0.1:5665
+        output: -
+
+Default Link : http://127.0.0.1:5665
+
+Jika ingin menonaktifkan
+> set K6_WEB_DASHBOARD=false
+> export K6_WEB_DASHBOARD=false
 
 
 
