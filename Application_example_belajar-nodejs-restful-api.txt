@@ -11,6 +11,6 @@ RESTFUL API PZN
 > npx prisma migrate dev ( Migrade DB dengan prisma)
 > npx prisma generate
 > node src/main.js (Jalankan Aplikasinya)
-
+> default port : 3000
 
 =============== PUDIN.MY.ID ====================
