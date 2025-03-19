@@ -9,6 +9,48 @@ Secara otomatis akan dibuatkan file baru di lokasi/file.js dan sudah berisi scri
 Misal buat 1 buah folder "src"
 > k6 new src/ping.js
 
+Contoh Kode di file ping.js :
+
+import http from 'k6/http';
+import { sleep, check } from 'k6';
+
+export const options = {
+  vus: 10, // Jumlah Virtual Users
+  duration: '30s', // Lamanya proses eksekusi
+};
+
+export default function() {
+  let res = http.get('http://localhost:3000/ping');
+  check(res, { "status is 200": (res) => res.status === 200 });
+  sleep(1); // Berhenti dulu 1 detik, tidak terus terusan rikuest ( jadi 1 riquest per 1 detik)
+}
+
+JALANKAN SCRIPT
+================
+> k6 run src/ping.js
+
+
+Summary Output
+================
+Setelah K6 menjalankan performance testing dari script yang kita buat, maka K6 akan menghasilkan output summary dari hasil performance testing
+Secara default, hasil output akan ditampilkan dalam console / terminal
+Namun jika kita mau, kita bisa simpan hasil output dalam bentuk file JSON
+dengan cara menggunakan perintah :
+> k6 run file/script.js --summary-export lokasi-output.json
+Keterangan dari setiap informasi output bisa kita lihat di halaman ini :
+https://grafana.com/docs/k6/latest/using-k6/metrics/reference/
+
+Misal :
+k6 run src/ping.js --summary-export ping-output.json
 
 
 
+
+
+
+
+
+
+
+
+====== PUDIN.MY.ID =======
