@@ -1,0 +1,16 @@
+EXAMPLE APPLICATION
+====================
+Pastikan sudah terinstall NodeJS Di komputer/Server
+RESTFUL API PZN
+> git clone https://github.com/ProgrammerZamanNow/belajar-nodejs-restful-api.git
+> cd belajar-nodejs-restful-api/
+> npm install
+> code . // Buka di visual studio code
+> (Ubah nama DB di .env)
+> buat datbasaenya, sesuaikan dengan yang di etting di .env
+> npx prisma migrate dev ( Migrade DB dengan prisma)
+> npx prisma generate
+> node src/main.js (Jalankan Aplikasinya)
+
+
+=============== PUDIN.MY.ID ====================
